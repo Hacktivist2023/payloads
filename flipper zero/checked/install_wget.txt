@@ -1,0 +1,25 @@
+REM The script ensures that wget is loaded 
+REM and installed
+REM (c) 2023 Peter Feil
+REM -------------------------------------------------------
+REM Close all Windows
+WINDOWS d
+DELAY 200
+REM Enter commandline
+WINDOWS r
+DELAY 200
+REM Start powershell
+STRING powershell Start-Process powershell -Verb runAs
+ENTER
+DELAY 1000
+LEFTARROW
+DELAY 1000
+ENTER
+DELAY 1000
+REM Install wget via winget
+STRING winget install wget
+DELAY 500
+ENTER
+DELAY 1000
+STRING exit
+ENTER

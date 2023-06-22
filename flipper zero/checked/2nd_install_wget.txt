@@ -11,7 +11,7 @@ DELAY 200
 REM Start powershell
 STRING powershell Start-Process powershell -Verb runAs
 ENTER
-DELAY 4000
+DELAY 6000
 LEFTARROW
 DELAY 1000
 ENTER

@@ -1,0 +1,16 @@
+REM (c) 2023 Peter Feil
+REM -------------------------------------------------------
+REM Close all Windows
+WINDOWS d
+DELAY 200
+REM Enter commandline
+WINDOWS r
+DELAY 200
+STRING cmd
+DELAY 1000
+REM Open cmd as an administrator
+CTRL SHIFT ENTER
+DELAY 1000
+LEFT
+DELAY 1000
+ENTER

